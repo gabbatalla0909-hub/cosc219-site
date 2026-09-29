@@ -5,9 +5,6 @@
   --space:  1rem;
 }
 
-h1 {
-    text-align:center;
-}
 a { color: var(--brand); }
 
 *,
@@ -27,6 +24,7 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: var(--space);
+    text-align: center;
 }
 
 h2 {
@@ -44,11 +42,36 @@ main {
     padding: var(--space);
 }
 
+nav {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    text-align: center;
+}
 
 nav a {
-    color: var(--brand);
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid black;
     text-decoration: none;
-    margin-right: var(--space);
+}
+
+@media (min-width: 38rem) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .muted {
@@ -79,7 +102,6 @@ select {
     padding: 0.75rem;
     font-size: 1rem;
     font-family: inherit;
-    color: var(--ink);
     background: white;
     border: 0.1rem solid var(--muted);
     border-radius: 0.25rem;
@@ -171,7 +193,7 @@ select,
 textarea {
   display: block;
   width: 100%;
-  border: 2px solid darkred;
+  border: 0.2rem solid darkred;
   padding: 0.5rem;
 }
 
