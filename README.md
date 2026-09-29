@@ -6,4 +6,4 @@ The page also includes my goals that I want to achieve one day
 Github Link: https://gabbatalla0909-hub.github.io/cosc219-site/
 I just found typing all of this tedious nothing too hard to do though
 
-Just finished lab 2 will further refine this after the submission
+Just finished lab 2 will further refine this after the submission, AI had been used to generate examples I took reference in
