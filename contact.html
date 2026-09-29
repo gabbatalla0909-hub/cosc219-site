@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contacts</h1>
+    </header>
+
+    <main>
+        <nav>
+        <ul>
+            <li><a href="contact.html">Current Page</a></li>
+            <li><a href = "index.html">Index</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "projects.html">Projects</a></li>
+        </ul>
+
+    </nav>
+     <form action="/signup" method="post"></form>
+
+    <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required>
+        </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your@example.com" required>
+        </p>
+    <p>
+        <label for="campus"> Campus</label>
+        <select>
+        <option>Vernon</option>
+        <option>Kelowna</option>
+        <option>Salmon Arm</option>
+        <option>Pentiction</option>
+        </select>
+        </p>
+   
+<fieldset>
+    <legend>Preferred contact method</legend>
+    <div class="option">
+        <input type="radio" id="c-email" name="contact" value="email">
+        <label for="c-email">Email</label>
+
+        <input type="radio" id="c-phone" name="contact" value="phone">
+        <label for="c-phone">Phone</label>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Favorite exotic animal?</legend>
+    <div class="option">
+        <input type="checkbox" id="snake" name="animal" value="snake">
+        <label for="snake">Snake</label>
+
+        <input type="checkbox" id="sugarglider" name="animal" value="sugarglider">
+        <label for="sugarglider">Sugar Glider</label>
+
+        <input type="checkbox" id="monitor-lizard" name="animal" value="monitor-lizard">
+        <label for="monitor-lizard">Monitor Lizard</label>
+    </div>
+</fieldset>
+
+    <label for="msg">Send me a message</label>
+    <textarea id="msg" name="msg" rows="5" col="40"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+:root {
+  --brand:  #a62b23;
+  --ink:    #12181f;
+  --muted:  #6b7885;
+  --space:  1rem;
+}
+
+h1 {
+    text-align:center;
+}
+a { color: var(--brand); }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0;
+    background: #eee;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: var(--space);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: var(--space);
+}
+
+
+nav a {
+    color: var(--brand);
+    text-decoration: none;
+    margin-right: var(--space);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.card {
+    padding: var(--space);
+    margin: var(--space) 0;
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0.15rem solid var(--brand);
+    outline-offset: 0.15rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--ink);
+    background: white;
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: var(--brand);
+}
+
+select:focus {
+    outline: 0.15rem solid var(--brand);
+    outline-offset: 0.15rem;
+    border-color: var(--brand);
+}
+input[type="email"] {
+    border-color: var(--brand);
+}
+
+form {
+    margin-top: 2rem;
+}
+
+fieldset {
+    border: 0.1rem solid var(--brand);
+    border-radius: 0.5rem;
+    padding: var(--space);
+}
+
+legend {
+    font-weight: bold;
+    color: var(--brand);
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: var(--space);
+    margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 0.1rem solid var(--muted);
+    border-radius: 0.25rem;
+}
+
+textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+button {
+    margin-top: var(--space);
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    background: var(--brand);
+    color: white;
+    border: 0.1rem solid var(--brand);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option input {
+  margin: 0;
+  width: auto;   
+}
+
+.option label {
+  display: inline;  
+  margin: 0;
+}
+button:hover {
+    background: #145f45;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid darkred;
+  padding: 0.5rem;
+}
+
+button:focus {
+    outline: 0.15rem solid var(--brand);
+    outline-offset: 0.15rem;
+}
