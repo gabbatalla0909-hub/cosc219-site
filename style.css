@@ -78,12 +78,6 @@ nav a {
     color: var(--muted);
 }
 
-.card {
-    padding: var(--space);
-    margin: var(--space) 0;
-    border: 0.1rem solid var(--muted);
-    border-radius: 0.5rem;
-}
 
 a:hover {
     text-decoration: underline;
@@ -200,4 +194,35 @@ textarea {
 button:focus {
     outline: 0.15rem solid var(--brand);
     outline-offset: 0.15rem;
+}
+/* 1 · explicit, with media queries */
+.cards { display: grid; gap: 1rem; grid-template-columns: 1fr;}
+
+@media (min-width: 38rem) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 58rem) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+.cards article{
+        gap: 1rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.sidebar {
+    align-self: start;
+}
+
+@media (min-width: 38rem) {
+    .page-layout {
+        grid-template-columns: 2fr 1fr;
+    }
 }
